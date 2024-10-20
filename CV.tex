@@ -1,0 +1,221 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Vaibhav Sharma}
+\newcommand{\CVTitle}{Vaibhav Sharma's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+% \newcommand{\CVWebpage}{}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+% pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks,
+}
+
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\par
+\href{mailto:vaibhav180101@gmail.com}
+{vaibhav180101@gmail.com}
+\,\SubBulletSymbol\,
++91\,8233332555
+\,\SubBulletSymbol\,
+\href{https://linkedin.com/in/vaibhv-shrma}{https://linkedin.com/in/vaibhv-shrma}
+\BigGap
+Anyone can write code that a computer understands, I write such that \textbf{humans} do.
+\Gap
+I like code changes with <100 lines of code having meaningful tests. Love solving problems and engaging in productive discussions about tech. Strong
+communicator and love working in a transparent environment.
+\end{SubTitle}
+
+\thispagestyle{empty}  % removes page number from this page
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+Software Engineer at\textbf{ Google, Bangalore}
+\hfill 
+\DatestampYMD{2022}{07}{04} --
+Present
+\BulletItem
+Working in Payments Platform as a Java Backend Engineer on the eWallets team
+\BulletItem
+Team handles payments from eWallets across the world and handles millions of transactions monthly
+\BulletItem
+Goal to make payments easy for users for purchasing products and services from Google
+\BulletItem
+Worked on defining and building payment standards for vendors to allow users to top-up their eWallet balance while in a Google payment flow. This reduced transaction failures due to insufficient funds by upto 80\%.
+\BulletItem
+Worked on enabling users to pay with their Google linked eWallets on 3P merchant websites (e.g. nike.com) pushing forward GPay Wallet as the all-in-one payment solution for users in APAC markets.
+\BulletItem
+Migrated Paypal add FOP journey of the users across the world to the latest generation of server driver UI while increasing add FOP success rate by 4\% resulting in incremental revenue generation for Google.
+\BulletItem
+\textbf{Extra work:} At Google, experiments are used to control and incrementally launch new features and products. Setting up experiments across multiple product layers to work in sync requires significant dev-effort to get done correctly. Built a tool to automate setting up such complex experiments. This helped increase developer velocity and reduced dev-effort down from around a week to a day. 
+
+\BigGap
+\Entry
+Software Engineer at\textbf{ HackerEarth, Bangalore}
+\hfill 
+\DatestampYMD{2020}{08}{01} --
+\DatestampYMD{2022}{07}{31}
+\BulletItem
+Implemented Points and Badges to game-ify HackerEarth Community. Broke down complex requirements into easy to maintain and extend code with efficient APIs. \href{https://www.hackerearth.com/docs/wiki/developers/points-and-badges-on-hackerearth/}{Read about it by clicking here}.
+\BulletItem
+Built the full stack for \href{https://www.hackerearth.com/practice/problems/}{list view for practice questions (click here)}. Highly performant APIs coupled with a beautiful interface created using the following. 
+\SubBulletItem Frontend: React  
+\SubBulletItem Backend: Django Rest Framework-Python
+\BulletItem
+Built DIY-Listed Tests which allows recruiters to list tests on HackerEarth
+community for higher test take-up rate. \href{https://help.hackerearth.com/hc/en-us/articles/4412341460633-Listed- tests}{Read about it by clicking here}. 
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+Java,
+Python,
+Django,
+Django Rest framework,
+React,
+Data Structures and Algorithms,
+MySQL,
+Object Oriented Programming,
+Testing
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{B.Tech Computer Science}, Manipal University Jaipur
+\hfill  2016 -- 2020
+\BulletItem
+\textbf{CGPA 9.63}
+
+\BigGap
+\Entry
+\textbf{Delhi Public School, Jaipur}
+\BulletItem
+CBSE All India Senior School Certificate Exams - Class 12
+\hfill 2015
+\SubBulletItem
+89.8\% in English + PCM + Information Practices
+\Gap
+\BulletItem
+CBSE All India Secondary School Examination - Class 10
+\hfill 2013
+\SubBulletItem
+CGPA: 9.8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Recognitions}
+{Awards \& Recognitions}
+{PDF:AwardsAndRecognitions}
+
+\BulletItem
+Multiple Peer Bonuses at Google
+\begin{Detail}
+\Item
+For helping various team mates in their work in the form of ramping up, sharing expertise, fixing critical bugs, unblocking launches, etc
+\Item
+Peer bonus by former manager for building the experiment automation tool, which helped launch in multiple regions quickly. 
+\end{Detail}
+
+\BulletItem
+Winner of HackerEarth's The Great Hackathon \#19
+\begin{Detail}
+\Item
+Won 1st place in HackerEarth's internal hackathon. Implemented Skill
+Badges for the users. Lead of team of 5.
+\end{Detail}
+
+\BulletItem
+HackerEarth Mission Impossible Award for high quality delivery Q2-2021
+\begin{Detail}
+\Item
+For driving gamification end-to-end and ensuring 0 bugs in QA and Prod.
+\end{Detail}
+
+\BulletItem
+HackerEarth Kudos Award for best performing new comer Q3-2020
+
+\end{Body}
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+
+
+\end{document}
